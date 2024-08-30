@@ -1,3 +1,6 @@
+litellm_settings:
+  drop_params: True
+
 model_list:
   - model_name: gemini-1.5-flash-001
     litellm_params:
