@@ -26,7 +26,7 @@ model_list:
 
   - model_name: gpt-4
     litellm_params:
-      model: vertex_ai/gemini-1.5-pro-001
+      model: vertex_ai/gemini-pro-experimental
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "asia-east2"
 
