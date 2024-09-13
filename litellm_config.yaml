@@ -36,6 +36,15 @@ model_list:
       model: vertex_ai_beta/gemini-flash-experimental
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "us-central1"
+      safety_settings:
+        - category: HARM_CATEGORY_HARASSMENT
+          threshold: BLOCK_NONE
+        - category: HARM_CATEGORY_HATE_SPEECH
+          threshold: BLOCK_NONE
+        - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+          threshold: BLOCK_NONE
+        - category: HARM_CATEGORY_DANGEROUS_CONTENT
+          threshold: BLOCK_NONE
       rpm: 10
 
   - model_name: gemini-pro-latest
@@ -44,6 +53,15 @@ model_list:
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "us-central1"
       rpm: 10
+      safety_settings:
+        - category: HARM_CATEGORY_HARASSMENT
+          threshold: BLOCK_NONE
+        - category: HARM_CATEGORY_HATE_SPEECH
+          threshold: BLOCK_NONE
+        - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+          threshold: BLOCK_NONE
+        - category: HARM_CATEGORY_DANGEROUS_CONTENT
+          threshold: BLOCK_NONE
       
   - model_name: gpt-4o
     litellm_params:
