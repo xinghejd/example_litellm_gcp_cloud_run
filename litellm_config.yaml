@@ -1,6 +1,6 @@
 litellm_settings:
   drop_params: True
-  default_fallbacks: ["gemini-1.5-flash-001"]
+  default_fallbacks: ["gemini-1.5-flash-002"]
 
 model_list:
   - model_name: gemini-1.5-flash-001
@@ -8,9 +8,19 @@ model_list:
       model: vertex_ai/gemini-1.5-flash-001
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "asia-east2"
+  - model_name: gemini-1.5-flash-002
+    litellm_params:
+      model: vertex_ai/gemini-1.5-flash-002
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "asia-east2"
   - model_name: gemini-1.5-pro-001
     litellm_params:
       model: vertex_ai/gemini-1.5-pro-001
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "asia-east2"
+  - model_name: gemini-1.5-pro-002
+    litellm_params:
+      model: vertex_ai/gemini-1.5-pro-002
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "asia-east2"
   - model_name: text-multilingual-embedding-002
@@ -21,13 +31,13 @@ model_list:
 
   - model_name: gpt-3.5-turbo
     litellm_params:
-      model: vertex_ai/gemini-1.5-flash-001
+      model: vertex_ai/gemini-1.5-flash-002
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "asia-east2"
 
   - model_name: gpt-4
     litellm_params:
-      model: vertex_ai/gemini-1.5-pro-001
+      model: vertex_ai/gemini-1.5-pro-002
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "asia-east2"
       
@@ -65,6 +75,6 @@ model_list:
       
   - model_name: gpt-4o
     litellm_params:
-      model: vertex_ai/gemini-1.5-pro-001
+      model: vertex_ai/gemini-1.5-pro-002
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "asia-east2"
