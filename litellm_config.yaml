@@ -40,6 +40,18 @@ model_list:
       model: vertex_ai/gemini-1.5-pro-002
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "asia-east2"
+
+  - model_name: gemini-2.0-flash-thinking-exp-1219
+    litellm_params:
+      model: vertex_ai/gemini-2.0-flash-thinking-exp-1219
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "asia-east2"
+      
+  - model_name: gemini-2.0-flash-exp
+    litellm_params:
+      model: vertex_ai/gemini-2.0-flash-exp
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "asia-east2"
       
   - model_name: gemini-flash-experimental
     litellm_params:
