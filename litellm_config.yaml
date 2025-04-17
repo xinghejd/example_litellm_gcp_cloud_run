@@ -46,29 +46,31 @@ model_list:
       model: vertex_ai/gemini-2.0-flash-thinking-exp-1219
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "asia-east2"
-      
+
   - model_name: gemini-2.0-flash-exp
     litellm_params:
       model: vertex_ai/gemini-2.0-flash-exp
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "asia-east2"
+
   - model_name: gemini-2.0-flash
     litellm_params:
       model: vertex_ai/gemini-2.0-flash-001
       vertex_project: os.environ/PROJECT_ID
-      vertex_location: "asia-east2"     
-  - model_name: gemini-2.0-pro-exp
-    litellm_params:
-      model: vertex_ai/gemini-2.0-pro-exp-02-05 
-      vertex_project: os.environ/PROJECT_ID
       vertex_location: "asia-east2"
       
+  - model_name: gemini-2.0-pro-exp
+    litellm_params:
+      model: vertex_ai/gemini-2.0-pro-exp-02-05
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "asia-east2"
+
   - model_name: gemini-2.5-pro-exp
     litellm_params:
       model: vertex_ai/gemini-2.5-pro-exp-03-25
       vertex_project: os.environ/PROJECT_ID
-      vertex_location: "us-central1" 
-      
+      vertex_location: "us-central1"
+
   - model_name: gemini-flash-experimental
     litellm_params:
       model: vertex_ai_beta/gemini-flash-experimental
@@ -100,7 +102,7 @@ model_list:
           threshold: BLOCK_NONE
         - category: HARM_CATEGORY_DANGEROUS_CONTENT
           threshold: BLOCK_NONE
-      
+
   - model_name: gpt-4o
     litellm_params:
       model: vertex_ai/gemini-1.5-pro-002
