@@ -71,6 +71,12 @@ model_list:
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "us-central1"
 
+  - model_name: gemini-2.5-pro-latest
+    litellm_params:
+      model: vertex_ai/gemini-2.5-pro-preview-05-06
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "us-central1"
+
   - model_name: gemini-flash-experimental
     litellm_params:
       model: vertex_ai_beta/gemini-flash-experimental
